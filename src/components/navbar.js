@@ -9,7 +9,7 @@ export const Navbar = () => {
   const logout = () => {
     setCookies("access_token", "");
     window.localStorage.removeItem("userID");
-    navigate("/");
+    navigate("/auth");
   };
   return (
     <div className="navbar">
@@ -20,7 +20,7 @@ export const Navbar = () => {
       ) : (
         <>
           <Link to="/insertSoliderInfo">
-            <button>הכנס קובץ</button>
+            <button>דף הבית</button>
           </Link>
           <Link to="/sortingDashboard">
             <button>פעולות נוספות</button>
