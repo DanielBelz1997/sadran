@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export function InsertExcel() {
+export function InsertSoliderInfo() {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileChange = (event) => {
@@ -14,7 +14,7 @@ export function InsertExcel() {
       formData.append("file", selectedFile);
 
       axios
-        .post("http://localhost:3001/insertExcel/insertExcel", formData)
+        .post("http://localhost:3001/solidersInfo", formData)
         .then((response) => {
           console.log("Upload successful!");
         })

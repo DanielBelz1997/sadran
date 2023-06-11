@@ -19,7 +19,7 @@ export const Navbar = () => {
         </Link>
       ) : (
         <>
-          <Link to="/insertExcel">
+          <Link to="/insertSoliderInfo">
             <button>דף הבית</button>
           </Link>
           <Link to="/sortingDashboard">

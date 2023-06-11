@@ -1,10 +1,22 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanshebrew.css);
 
 body {
+  background-image: url("./LOGO.png");
+  background-repeat: no-repeat;
+  background-position: center 135px;
+  background-size: 700px 450px;
+}
+
+body {
   font-family: "Noto Sans Hebrew";
 }
 
 .navbar {
+  background-image: url("./LOGO3.png");
+  background-size: 100px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +25,8 @@ body {
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: -0.8rem;
-  margin-left: -9px;
-  margin-right: -9px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 
 .navbar a {
@@ -159,6 +171,15 @@ button:hover {
   color: #999;
 }
 
+.note {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -90px;
+  margin-bottom: 120px;
+}
+
 .upload-container {
   display: block;
   justify-content: center;
@@ -169,7 +190,7 @@ button:hover {
 
 h1 {
   margin-top: 120px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .file-input-container {
@@ -178,17 +199,19 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f0f0f0;
-  padding: 3rem;
+  padding: 3rem 2rem;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 60px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 input[type="file"] {
-  display: block;
+  display: flexbox;
 }
 
 .upload-button {
+  width: max-content;
+  align-self: center;
   margin-top: 140px;
   padding: 10px 20px;
   background-color: #3f6885;
@@ -206,4 +229,19 @@ input[type="file"] {
 .upload-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.input-field {
+  display: block;
+  padding: 20px 20px;
+  background-color: #a0a0a0;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 40px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.input-field:hover {
+  background-color: #d0d0d0;
 }
