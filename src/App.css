@@ -1,13 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanshebrew.css);
 
 body {
-  background-image: url("./LOGO.png");
-  background-repeat: no-repeat;
-  background-position: center 135px;
-  background-size: 700px 450px;
-}
-
-body {
   font-family: "Noto Sans Hebrew";
 }
 
@@ -244,4 +237,62 @@ input[type="file"] {
 
 .input-field:hover {
   background-color: #d0d0d0;
+}
+
+.parameter-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.parameter-button {
+  justify-content: center;
+  margin: 5px;
+  padding: 20px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  text-align: center;
+}
+
+.parameter {
+  margin-top: 150px;
+  font-size: xx-large;
+}
+
+.parameter1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tableBotton {
+  padding: 8px;
+  margin: 4px;
+  font-size: 14px;
+  float: right;
 }
